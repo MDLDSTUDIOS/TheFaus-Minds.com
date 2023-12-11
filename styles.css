@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ccc; /* Cambia el color de fondo a gris (#ccc) */
+}
+
+header {
+    background: linear-gradient(to right, #9933cc, #3366cc, #ff0000);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+button {
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #9933cc, #3366cc, #ff0000);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#sidebar nav {
+    padding: 10px;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar li {
+    margin-bottom: 10px;
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+}
+
+#sidebar a:hover {
+    background-color: #555;
+}
+
+#sidebar button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+#sidebar button:hover {
+    color: #ffd700;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#thought-form {
+    margin-bottom: 20px;
+    background-color: #ccc; /* Fondo gris para el cuadro "Escribe un pensamiento" */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+textarea {
+    width: calc(100% - 20px);
+    height: 100px;
+    resize: none;
+    margin-bottom: 10px;
+    overflow-y: auto;
+    word-wrap: break-word;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#share-button {
+    padding: 10px;
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Botón más redondeado */
+}
+
+.thought-container {
+    max-width: 80%;
+    margin: auto;
+    overflow-y: auto;
+    max-height: 500px;
+}
+
+.thought {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+    position: relative;
+}
+
+.thought:before {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent transparent #000 transparent;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.thought-prefix {
+    color: purple;
+    font-weight: bold;
+}
+
+.thought-content {
+    color: #fff;
+    width: auto;
+}
+
+/* Agrega estas clases para el tema oscuro */
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Agrega estas clases para el tema claro */
+.light-theme {
+    background-color: #fff;
+    color: #333;
+}
+
+.delete-button {
+    background-color: #ff6666;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
